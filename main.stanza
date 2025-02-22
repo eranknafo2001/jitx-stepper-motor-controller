@@ -36,6 +36,8 @@ pcb-module top-level :
     copper-pour(LayerIndex(0), isolate = 0.125, rank = 1) = board-shape
     copper-pour(LayerIndex(1), isolate = 0.125, rank = 1) = board-shape
   geom(VC) :
+    copper-pour(LayerIndex(2), isolate = 0.125, rank = 1) = board-shape
+  geom(VM) :
     copper-pour(LayerIndex(3), isolate = 0.125, rank = 1) = board-shape
 
 
