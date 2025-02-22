@@ -18,14 +18,12 @@ pcb-module top-level :
   ; define some case-sensitive pins/ports
   port gnd
   port vdd
-  port signal
   inst stepper : stepper-controller
 
   ; Create nets for the pins/ports which will be used to connect component pins 
   ; Note that the net names are case-sensitive as well.
-  net GND (gnd)
+  net GND (gnd stepper.GND)
   net VDD (vdd)
-  net SIGNAL (signal)
 
   ; Instantiate and connect a 10k resistor component between the named nets VDD and SIGNAL
   ; insert-resistor(VDD, SIGNAL, R-query, resistance = 10.0e3)

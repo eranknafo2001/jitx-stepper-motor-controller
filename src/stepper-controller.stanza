@@ -11,4 +11,30 @@ defpackage local/stepper-controller :
 
 public pcb-module stepper-controller :
   name = "Stepper Controller"
+  port VM
+  port VC
+  port GND
+
   inst controller : create-part(mpn = "TMC5160A-TA-T", manufacturer = "TRINAMIC Motion Control GmbH")
+
+  net VCC_IO (VC controller.VCC_IO)
+  insert-capacitor(VC, GND, C-query, capacitance = 100.0e-9)
+
+  net (VM controller.VSA)
+  insert-capacitor(VM, GND, C-query, capacitance = 100.0e-9)
+  insert-capacitor(controller.P_12VOUT, GND, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.P_5VOUT, GND, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.VCC, GND, C-query, capacitance = 470.0e-9)
+  insert-resistor(controller.VCC, controller.P_5VOUT, R-query, resistance = 2.2)
+
+
+  insert-capacitor(controller.VS, GND, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.VS, GND, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.VS, controller.VCP, C-query, capacitance = 2.2e-6)
+
+  insert-capacitor(controller.CPI, controller.CPO, C-query, capacitance = 2.2e-6)
+
+  net SPI_MODE (controller.SPI_MODE VC)
+  net (controller.SD_MODE GND)
+
+  net (GND controller.GNDD0 controller.GNDD1 controller.EP)

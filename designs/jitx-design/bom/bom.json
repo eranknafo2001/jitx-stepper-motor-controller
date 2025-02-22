@@ -47,76 +47,161 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"20A 10V~50V SPI,STEP/DIR TQFP-48(7x7)  Motor Driver ICs ROHS",
+				"description":	"62.5mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0402  Chip Resistor - Surface Mount ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
 								"name":	"stepper"
 							},
 							"field":	{
-								"name":	"controller"
+								"name":	"element"
 							}
-						},
-						"ref":	"U1",
-						"fileinfo":	{
-							"filename":	"src/stepper-controller.stanza",
-							"line":	14,
-							"column":	2
-						}
-					}],
-				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2004211206_TRINAMIC-Motion-Control-GmbH-TMC5160A-TA-T_C516354.pdf",
-				"manufacturer":	"TRINAMIC Motion Control GmbH",
-				"mpn":	"TMC5160A-TA-T",
-				"vendor":	"JLCPCB",
-				"sku":	"TMC5160A-TA-T",
-				"price":	4.684285714,
-				"preferred":	false,
-				"query_properties":	{
-					"manufacturer":	"TRINAMIC Motion Control GmbH",
-					"mpn":	"TMC5160A-TA-T",
-					"min-stock":	1,
-					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
-				}
-			}],
-		"entries":	[{
-			}]
-	},
-	"metrics":	[{
-			"name":	"Line Items",
-			"value":	1
-		}, {
-			"name":	"Components",
-			"value":	1
-		}, {
-			"name":	"Cost",
-			"value":	"$4.68"
-		}],
-	"is_update":	false,
-	"old_bom":	{
-		"rows":	[{
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS",
-				"insts":	[{
-						"inst":	{
-							"name":	"element"
 						},
 						"ref":	"R1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf",
-				"manufacturer":	"TE CONNECTIVITY",
-				"mpn":	"CRGCQ0402F10K",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141233_YAGEO-RC0402FR-072R2L_C327251.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-072R2L",
 				"vendor":	"Arrow",
-				"sku":	"CRGCQ0402F10K",
-				"price":	0.0647,
+				"sku":	"RC0402FR-072R2L",
+				"price":	0.0034,
 				"preferred":	false,
 				"query_properties":	{
-					"resistance":	10000,
+					"resistance":	2.2,
 					"tolerance":	0.01,
 					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A225MQ5NNNC_C107371.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A225MQ5NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A225MQ5NNNC",
+				"price":	0.0027,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	2.2e-06,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 470nF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111637_Murata-Electronics-GRM155R61H474ME11D_C1849650.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM155R61H474ME11D",
+				"vendor":	"Arrow",
+				"sku":	"GRM155R61H474ME11D",
+				"price":	0.0113,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
 					"_sort":	["area"],
 					"case":	["0402", "0603"],
 					"mounting":	"smd",
@@ -131,7 +216,23 @@
 				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
-							"name":	"element"
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
 						},
 						"ref":	"C1",
 						"fileinfo":	null
@@ -156,8 +257,316 @@
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"20A 10V~50V SPI,STEP/DIR TQFP-48(7x7)  Motor Driver ICs ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"controller"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"src/stepper-controller.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2004211206_TRINAMIC-Motion-Control-GmbH-TMC5160A-TA-T_C516354.pdf",
+				"manufacturer":	"TRINAMIC Motion Control GmbH",
+				"mpn":	"TMC5160A-TA-T",
+				"vendor":	"JLCPCB",
+				"sku":	"TMC5160A-TA-T",
+				"price":	4.684285714,
+				"preferred":	false,
+				"query_properties":	{
+					"manufacturer":	"TRINAMIC Motion Control GmbH",
+					"mpn":	"TMC5160A-TA-T",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
 			}],
 		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	5
+		}, {
+			"name":	"Components",
+			"value":	11
+		}, {
+			"name":	"Cost",
+			"value":	"$4.73"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141233_YAGEO-RC0402FR-072R2L_C327251.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-072R2L",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-072R2L",
+				"price":	0.0034,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	2.2,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A225MQ5NNNC_C107371.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A225MQ5NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A225MQ5NNNC",
+				"price":	0.0027,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	2.2e-06,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 470nF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111637_Murata-Electronics-GRM155R61H474ME11D_C1849650.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM155R61H474ME11D",
+				"vendor":	"Arrow",
+				"sku":	"GRM155R61H474ME11D",
+				"price":	0.0113,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111600_Murata-Electronics-GCM155R71H104ME02D_C710666.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GCM155R71H104ME02D",
+				"vendor":	"Arrow",
+				"sku":	"GCM155R71H104ME02D",
+				"price":	0.0058,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"20A 10V~50V SPI,STEP/DIR TQFP-48(7x7)  Motor Driver ICs ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"controller"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"src/stepper-controller.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2004211206_TRINAMIC-Motion-Control-GmbH-TMC5160A-TA-T_C516354.pdf",
+				"manufacturer":	"TRINAMIC Motion Control GmbH",
+				"mpn":	"TMC5160A-TA-T",
+				"vendor":	"JLCPCB",
+				"sku":	"TMC5160A-TA-T",
+				"price":	4.684285714,
+				"preferred":	false,
+				"query_properties":	{
+					"manufacturer":	"TRINAMIC Motion Control GmbH",
+					"mpn":	"TMC5160A-TA-T",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
 			}, {
 			}]
 	}
