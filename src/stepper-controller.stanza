@@ -14,13 +14,20 @@ public pcb-module stepper-controller :
   port VM
   port VC
   port GND
+  port CSN
+  port SCK
+  port MOSI
+  port MISO
+  port ENABLE
+  port DIAG0
+  port DIAG1
 
-  inst controller : create-part(mpn = "TMC5160A-TA-T", manufacturer = "TRINAMIC Motion Control GmbH")
+  inst controller : create-part(mpn = "TMC5160A-TA-T")
 
   net VCC_IO (VC controller.VCC_IO)
   insert-capacitor(VC, GND, C-query, capacitance = 100.0e-9)
 
-  net (VM controller.VSA)
+  net (VM controller.VSA controller.VS)
   insert-capacitor(VM, GND, C-query, capacitance = 100.0e-9)
   insert-capacitor(controller.P_12VOUT, GND, C-query, capacitance = 2.2e-6)
   insert-capacitor(controller.P_5VOUT, GND, C-query, capacitance = 2.2e-6)
@@ -30,11 +37,91 @@ public pcb-module stepper-controller :
 
   insert-capacitor(controller.VS, GND, C-query, capacitance = 2.2e-6)
   insert-capacitor(controller.VS, GND, C-query, capacitance = 2.2e-6)
-  insert-capacitor(controller.VS, controller.VCP, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.VS, controller.VCP, C-query, capacitance = 2.2e-6, rated-voltage = AtLeast(16.0))
 
-  insert-capacitor(controller.CPI, controller.CPO, C-query, capacitance = 2.2e-6)
+  insert-capacitor(controller.CPI, controller.CPO, PartQuery(mpn = "GRM21BD72A225KE01L")) ; 2.2uF 100V X5R 0805
+  ; insert-capacitor(controller.CPI, controller.CPO, CapacitorQuery(capacitance = 2.2e-6, mouinting = "smd", rated-voltage = AtLeast(100.0)))
 
-  net SPI_MODE (controller.SPI_MODE VC)
+  net (controller.SPI_MODE VC)
   net (controller.SD_MODE GND)
 
-  net (GND controller.GNDD0 controller.GNDD1 controller.EP)
+  net (controller.CLK GND)
+  net (controller.TST_MODE GND)
+  net (controller.REFL_STEP controller.REFR_DIR GND)
+  net (controller.ENCB_DCEN_CFG4 controller.ENCA_DCIN_CFG5 controller.ENCN_DCO_CFG6 GND)
+
+  net (controller.DRV_ENN ENABLE)
+  net (controller.DIAG1_SWP DIAG1)
+  net (controller.DIAG0_SWN DIAG0)
+  net (controller.CSN_CFG3 CSN)
+  net (controller.SCK_CFG2 SCK)
+  net (controller.SDI_CFG1 MOSI)
+  net (controller.SDO_CFG0 MISO)
+
+  net (GND controller.GNDD0 controller.GNDD1 controller.EP controller.GNDA)
+
+  inst HBridgeA : h-bridge
+  net (GND HBridgeA.GND)
+  net (VM HBridgeA.VM)
+  net (HBridgeA.H1 controller.HA1)
+  net (HBridgeA.H2 controller.HA2)
+  net (HBridgeA.L1 controller.LA1)
+  net (HBridgeA.L2 controller.LA2)
+  net (HBridgeA.C1 controller.CA1)
+  net (HBridgeA.C2 controller.CA2)
+  net (HBridgeA.BM1 controller.BMA1)
+  net (HBridgeA.BM2 controller.BMA2)
+  net (HBridgeA.SRH controller.SRAH)
+  net (HBridgeA.SRL controller.SRAL)
+
+  inst HBridgeB : h-bridge
+  net (GND HBridgeB.GND)
+  net (VM HBridgeB.VM)
+  net (HBridgeB.H1 controller.HB1)
+  net (HBridgeB.H2 controller.HB2)
+  net (HBridgeB.L1 controller.LB1)
+  net (HBridgeB.L2 controller.LB2)
+  net (HBridgeB.C1 controller.CB1)
+  net (HBridgeB.C2 controller.CB2)
+  net (HBridgeB.BM1 controller.BMB1)
+  net (HBridgeB.BM2 controller.BMB2)
+  net (HBridgeB.SRH controller.SRBH)
+  net (HBridgeB.SRL controller.SRBL)
+
+pcb-module h-bridge :
+  name = "H-Bridge"
+  port VM
+  port GND
+  port H1
+  port H2
+  port L1
+  port L2
+  port C1
+  port C2
+  port BM1
+  port BM2
+  port M1
+  port M2
+  port SRH
+  port SRL
+
+  inst H1Transistor : create-part(mpn = "AOD4126")
+  inst H2Transistor : create-part(mpn = "AOD4126")
+  inst L1Transistor : create-part(mpn = "AOD4126")
+  inst L2Transistor : create-part(mpn = "AOD4126")
+
+  insert-capacitor(VM, GND, C-query, capacitance = 470.0e-9)
+  net (VM H1Transistor.D H2Transistor.D)
+  net (M1 BM1 H1Transistor.S L1Transistor.D)
+  net (M2 BM2 H2Transistor.S L2Transistor.D)
+  insert-capacitor(M1, C1, C-query, capacitance = 470.0e-9)
+  insert-capacitor(M2, C2, C-query, capacitance = 470.0e-9)
+  net LS (L1Transistor.S L2Transistor.S)
+  insert-resistor(LS, GND, R-query, resistance = 30.0e-3)
+  insert-resistor(LS, SRH, R-query, resistance = 47.0)
+  insert-resistor(GND, SRL, R-query, resistance = 47.0)
+
+  insert-resistor(H1Transistor.G, H1, PartQuery(mpn = "HoAR2512-1W-5R-0.1%-TCR25")) ; 5 ohm case 2512
+  insert-resistor(H2Transistor.G, H2, PartQuery(mpn = "HoAR2512-1W-5R-0.1%-TCR25")) ; 5 ohm case 2512
+  insert-resistor(L1Transistor.G, L1, PartQuery(mpn = "HoAR2512-1W-5R-0.1%-TCR25")) ; 5 ohm case 2512
+  insert-resistor(L2Transistor.G, L2, PartQuery(mpn = "HoAR2512-1W-5R-0.1%-TCR25")) ; 5 ohm case 2512

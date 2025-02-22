@@ -11,44 +11,44 @@ defpackage main :
   import local/stepper-controller
 
 ; Define the shape/size of the board
-val board-shape = RoundedRectangle(30.0, 18.5, 0.25)
+val board-shape = RoundedRectangle(50.0, 50.5, 0.25)
 
-; Module to run as a design
 pcb-module top-level :
-  ; define some case-sensitive pins/ports
-  port gnd
-  port vdd
   inst stepper : stepper-controller
 
-  ; Create nets for the pins/ports which will be used to connect component pins 
-  ; Note that the net names are case-sensitive as well.
-  net GND (gnd stepper.GND)
-  net VDD (vdd)
+  inst power-plug : create-part(mpn = "PZ254V-11-03P")
 
-  ; Instantiate and connect a 10k resistor component between the named nets VDD and SIGNAL
-  ; insert-resistor(VDD, SIGNAL, R-query, resistance = 10.0e3)
-  ; ; Instantiate and connect a 100nF capacitor component between the named nets VDD and GND
-  ; insert-capacitor(VDD, GND, C-query, capacitance = 100.0e-9)
+  net GND (stepper.GND power-plug.p[2])
+  net VC (stepper.VC power-plug.p[1])
+  net VM (stepper.VM power-plug.p[3])
 
-  ; Attach schematic symbols to the nets (from JSL)
+  inst data-plug : create-part(mpn = "PM254V-11-07-H85")
+
+  net (data-plug.p[1] stepper.CSN)
+  net (data-plug.p[2] stepper.SCK)
+  net (data-plug.p[3] stepper.MOSI)
+  net (data-plug.p[4] stepper.MISO)
+  net (data-plug.p[5] stepper.ENABLE)
+  net (data-plug.p[6] stepper.DIAG0)
+  net (data-plug.p[7] stepper.DIAG1)
+
+  geom(GND) :
+    copper-pour(LayerIndex(0), isolate = 0.125, rank = 1) = board-shape
+    copper-pour(LayerIndex(1), isolate = 0.125, rank = 1) = board-shape
+  geom(VC) :
+    copper-pour(LayerIndex(3), isolate = 0.125, rank = 1) = board-shape
+
+
   symbol(GND) = GND-SYMB
-  symbol(VDD) = PWR-SYMB
+  symbol(VC) = PWR-SYMB
+  symbol(VM) = PWR-SYMB
 
-; Set the :
-;     design-name     - a directory with this name will be created in the "designs" directory
-;     board           - a Board object representing the stackup, rules and board shape for a particular design
-;     signal-shrink   - a distance in mm to pull back copper signals from the board edge
 setup-design("jitx-design", board-shape, signal-shrink = 0.5)
 
-; Set the top level module (the module to be compile into a schematic and PCB)
 set-main-module(top-level)
 
-; View the results
-; take a look at the BOM that was generated
-view-bom(BOM-STD)
-; examine the schematic that was auto-generated
+; view-bom(BOM-STD)
 view-schematic()
-; view the board that was created
 view-board()
 
 

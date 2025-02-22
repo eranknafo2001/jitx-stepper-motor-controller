@@ -47,7 +47,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"62.5mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"description":	"16V 100nF X7R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -57,22 +57,36 @@
 								"name":	"element"
 							}
 						},
-						"ref":	"R1",
+						"ref":	"C2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141233_YAGEO-RC0402FR-072R2L_C327251.pdf",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202040600_YAGEO-CC0603MRX7R7BB104_C2172848.pdf",
 				"manufacturer":	"YAGEO",
-				"mpn":	"RC0402FR-072R2L",
+				"mpn":	"CC0603MRX7R7BB104",
 				"vendor":	"Arrow",
-				"sku":	"RC0402FR-072R2L",
-				"price":	0.0034,
+				"sku":	"CC0603MRX7R7BB104",
+				"price":	0.051,
 				"preferred":	false,
 				"query_properties":	{
-					"resistance":	2.2,
-					"tolerance":	0.01,
-					"category":	"resistor",
+					"capacitance":	1e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	10,
+					"category":	"capacitor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -82,7 +96,345 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"description":	"1W ±25ppm/℃ ±0.1% 5Ω 2512  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R15",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208051800_Milliohm-HoAR2512-1W-5R-0-1--TCR25_C5123609.pdf",
+				"manufacturer":	"Milliohm",
+				"mpn":	"HoAR2512-1W-5R-0.1%-TCR25",
+				"vendor":	"JLCPCB",
+				"sku":	"HoAR2512-1W-5R-0.1%-TCR25",
+				"price":	0.411428571,
+				"preferred":	false,
+				"query_properties":	{
+					"category":	"resistor",
+					"mpn":	"HoAR2512-1W-5R-0.1%-TCR25",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 0.03 OHM 1% 1/3W 0603",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf",
+				"manufacturer":	"PANASONIC",
+				"mpn":	"ERJ-3BWFR030V",
+				"vendor":	"Arrow",
+				"sku":	"ERJ-3BWFR030V",
+				"price":	0.0965,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	0.03,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 470nF X7R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C15",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X7R1H474M080AB_C2182645.pdf",
+				"manufacturer":	"TDK Corp",
+				"mpn":	"CGA3E3X7R1H474M080AB",
+				"vendor":	"Arrow",
+				"sku":	"CGA3E3X7R1H474M080AB",
+				"price":	0.1735,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	10,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"100V 2.2uF X7T 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -94,7 +446,294 @@
 						},
 						"ref":	"C9",
 						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203210916_Murata-Electronics-GRM21BD72A225KE01L_C2981733.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM21BD72A225KE01L",
+				"vendor":	"Arrow",
+				"sku":	"GRM21BD72A225KE01L",
+				"price":	0.0968,
+				"preferred":	false,
+				"query_properties":	{
+					"category":	"capacitor",
+					"mpn":	"GRM21BD72A225KE01L",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"N-Channel 100V 43A(Tc) 4V @ 250uA 24mΩ @ 20A,10V 3W TO-252 MOSFET RoHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"L2Transistor"
+							}
+						},
+						"ref":	"Q8",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	111,
+							"column":	2
+						}
 					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"L1Transistor"
+							}
+						},
+						"ref":	"Q7",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	110,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"H2Transistor"
+							}
+						},
+						"ref":	"Q6",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	109,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"H1Transistor"
+							}
+						},
+						"ref":	"Q5",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	108,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"L2Transistor"
+							}
+						},
+						"ref":	"Q4",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	111,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"L1Transistor"
+							}
+						},
+						"ref":	"Q3",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	110,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"H2Transistor"
+							}
+						},
+						"ref":	"Q2",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	109,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"H1Transistor"
+							}
+						},
+						"ref":	"Q1",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	108,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/szlcsc/1912111437_Alpha-Omega-Semicon-AOD4126_C457934.pdf",
+				"manufacturer":	"Alpha & Omega Semicon",
+				"mpn":	"AOD4126",
+				"vendor":	"DigiKey",
+				"sku":	"AOD4126",
+				"price":	0.99,
+				"preferred":	false,
+				"query_properties":	{
+					"mpn":	"AOD4126",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"100mW Thick Film Resistors ±100ppm/℃ ±1% 47Ω 0603  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0603FR-0747RL_C114623.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0603FR-0747RL",
+				"vendor":	"Arrow",
+				"sku":	"RC0603FR-0747RL",
+				"price":	0.0042,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	47,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 2.2uF X5R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
 						"inst":	{
 							"ref":	{
 								"name":	"stepper"
@@ -150,22 +789,22 @@
 						"ref":	"C3",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A225MQ5NNNC_C107371.pdf",
-				"manufacturer":	"Samsung Electro-Mechanics",
-				"mpn":	"CL05A225MQ5NNNC",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303141000_Murata-Electronics-GRM188R61E225MA12D_C668356.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM188R61E225MA12D",
 				"vendor":	"Arrow",
-				"sku":	"CL05A225MQ5NNNC",
-				"price":	0.0027,
+				"sku":	"GRM188R61E225MA12D",
+				"price":	0.0124,
 				"preferred":	false,
 				"query_properties":	{
+					"min-rated-voltage":	16,
 					"capacitance":	2.2e-06,
 					"tolerance.max":	0.2,
 					"type":	"ceramic",
 					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
 					"category":	"capacitor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -175,7 +814,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"50V 470nF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"description":	"100mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0603  Chip Resistor - Surface Mount ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -185,74 +824,22 @@
 								"name":	"element"
 							}
 						},
-						"ref":	"C4",
+						"ref":	"R1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111637_Murata-Electronics-GRM155R61H474ME11D_C1849650.pdf",
-				"manufacturer":	"MURATA",
-				"mpn":	"GRM155R61H474ME11D",
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0603FR-072R2L_C112307.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0603FR-072R2L",
 				"vendor":	"Arrow",
-				"sku":	"GRM155R61H474ME11D",
-				"price":	0.0113,
+				"sku":	"RC0603FR-072R2L",
+				"price":	0.0052,
 				"preferred":	false,
 				"query_properties":	{
-					"capacitance":	4.7e-07,
-					"tolerance.max":	0.2,
-					"type":	"ceramic",
-					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
-					"category":	"capacitor",
+					"resistance":	2.2,
+					"tolerance":	0.01,
+					"category":	"resistor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
-					"mounting":	"smd",
-					"min-stock":	1,
-					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"name":	"stepper"
-							},
-							"field":	{
-								"name":	"element"
-							}
-						},
-						"ref":	"C2",
-						"fileinfo":	null
-					}, {
-						"inst":	{
-							"ref":	{
-								"name":	"stepper"
-							},
-							"field":	{
-								"name":	"element"
-							}
-						},
-						"ref":	"C1",
-						"fileinfo":	null
-					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111600_Murata-Electronics-GCM155R71H104ME02D_C710666.pdf",
-				"manufacturer":	"MURATA",
-				"mpn":	"GCM155R71H104ME02D",
-				"vendor":	"Arrow",
-				"sku":	"GCM155R71H104ME02D",
-				"price":	0.0058,
-				"preferred":	false,
-				"query_properties":	{
-					"capacitance":	1e-07,
-					"tolerance.max":	0.2,
-					"type":	"ceramic",
-					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
-					"category":	"capacitor",
-					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -274,8 +861,8 @@
 						},
 						"ref":	"U1",
 						"fileinfo":	{
-							"filename":	"src/stepper-controller.stanza",
-							"line":	18,
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	25,
 							"column":	2
 						}
 					}],
@@ -287,13 +874,17 @@
 				"price":	4.684285714,
 				"preferred":	false,
 				"query_properties":	{
-					"manufacturer":	"TRINAMIC Motion Control GmbH",
 					"mpn":	"TMC5160A-TA-T",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
 			}],
 		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
 			}, {
 			}, {
 			}, {
@@ -302,13 +893,13 @@
 	},
 	"metrics":	[{
 			"name":	"Line Items",
-			"value":	5
+			"value":	10
 		}, {
 			"name":	"Components",
-			"value":	11
+			"value":	39
 		}, {
 			"name":	"Cost",
-			"value":	"$4.73"
+			"value":	"$17.59"
 		}],
 	"is_update":	false,
 	"old_bom":	{
@@ -317,7 +908,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"62.5mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"description":	"16V 100nF X7R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -327,22 +918,36 @@
 								"name":	"element"
 							}
 						},
-						"ref":	"R1",
+						"ref":	"C2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141233_YAGEO-RC0402FR-072R2L_C327251.pdf",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202040600_YAGEO-CC0603MRX7R7BB104_C2172848.pdf",
 				"manufacturer":	"YAGEO",
-				"mpn":	"RC0402FR-072R2L",
+				"mpn":	"CC0603MRX7R7BB104",
 				"vendor":	"Arrow",
-				"sku":	"RC0402FR-072R2L",
-				"price":	0.0034,
+				"sku":	"CC0603MRX7R7BB104",
+				"price":	0.051,
 				"preferred":	false,
 				"query_properties":	{
-					"resistance":	2.2,
-					"tolerance":	0.01,
-					"category":	"resistor",
+					"capacitance":	1e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	10,
+					"category":	"capacitor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -352,7 +957,345 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"description":	"1W ±25ppm/℃ ±0.1% 5Ω 2512  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R15",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208051800_Milliohm-HoAR2512-1W-5R-0-1--TCR25_C5123609.pdf",
+				"manufacturer":	"Milliohm",
+				"mpn":	"HoAR2512-1W-5R-0.1%-TCR25",
+				"vendor":	"JLCPCB",
+				"sku":	"HoAR2512-1W-5R-0.1%-TCR25",
+				"price":	0.411428571,
+				"preferred":	false,
+				"query_properties":	{
+					"category":	"resistor",
+					"mpn":	"HoAR2512-1W-5R-0.1%-TCR25",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 0.03 OHM 1% 1/3W 0603",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf",
+				"manufacturer":	"PANASONIC",
+				"mpn":	"ERJ-3BWFR030V",
+				"vendor":	"Arrow",
+				"sku":	"ERJ-3BWFR030V",
+				"price":	0.0965,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	0.03,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 470nF X7R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C15",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"stepper"
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X7R1H474M080AB_C2182645.pdf",
+				"manufacturer":	"TDK Corp",
+				"mpn":	"CGA3E3X7R1H474M080AB",
+				"vendor":	"Arrow",
+				"sku":	"CGA3E3X7R1H474M080AB",
+				"price":	0.1735,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	10,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"100V 2.2uF X7T 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -364,7 +1307,294 @@
 						},
 						"ref":	"C9",
 						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203210916_Murata-Electronics-GRM21BD72A225KE01L_C2981733.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM21BD72A225KE01L",
+				"vendor":	"Arrow",
+				"sku":	"GRM21BD72A225KE01L",
+				"price":	0.0968,
+				"preferred":	false,
+				"query_properties":	{
+					"category":	"capacitor",
+					"mpn":	"GRM21BD72A225KE01L",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"N-Channel 100V 43A(Tc) 4V @ 250uA 24mΩ @ 20A,10V 3W TO-252 MOSFET RoHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"L2Transistor"
+							}
+						},
+						"ref":	"Q8",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	90,
+							"column":	2
+						}
 					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"L1Transistor"
+							}
+						},
+						"ref":	"Q7",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	89,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"H2Transistor"
+							}
+						},
+						"ref":	"Q6",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	88,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"H1Transistor"
+							}
+						},
+						"ref":	"Q5",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	87,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"L2Transistor"
+							}
+						},
+						"ref":	"Q4",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	90,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"L1Transistor"
+							}
+						},
+						"ref":	"Q3",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	89,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"H2Transistor"
+							}
+						},
+						"ref":	"Q2",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	88,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"H1Transistor"
+							}
+						},
+						"ref":	"Q1",
+						"fileinfo":	{
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	87,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/szlcsc/1912111437_Alpha-Omega-Semicon-AOD4126_C457934.pdf",
+				"manufacturer":	"Alpha & Omega Semicon",
+				"mpn":	"AOD4126",
+				"vendor":	"DigiKey",
+				"sku":	"AOD4126",
+				"price":	0.99,
+				"preferred":	false,
+				"query_properties":	{
+					"mpn":	"AOD4126",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"100mW Thick Film Resistors ±100ppm/℃ ±1% 47Ω 0603  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeB"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"stepper"
+								},
+								"field":	{
+									"name":	"HBridgeA"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0603FR-0747RL_C114623.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0603FR-0747RL",
+				"vendor":	"Arrow",
+				"sku":	"RC0603FR-0747RL",
+				"price":	0.0042,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	47,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0603", "0805"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 2.2uF X5R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
 						"inst":	{
 							"ref":	{
 								"name":	"stepper"
@@ -420,22 +1650,22 @@
 						"ref":	"C3",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A225MQ5NNNC_C107371.pdf",
-				"manufacturer":	"Samsung Electro-Mechanics",
-				"mpn":	"CL05A225MQ5NNNC",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303141000_Murata-Electronics-GRM188R61E225MA12D_C668356.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM188R61E225MA12D",
 				"vendor":	"Arrow",
-				"sku":	"CL05A225MQ5NNNC",
-				"price":	0.0027,
+				"sku":	"GRM188R61E225MA12D",
+				"price":	0.0124,
 				"preferred":	false,
 				"query_properties":	{
+					"min-rated-voltage":	16,
 					"capacitance":	2.2e-06,
 					"tolerance.max":	0.2,
 					"type":	"ceramic",
 					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
 					"category":	"capacitor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -445,7 +1675,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"50V 470nF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"description":	"100mW Thick Film Resistors ±1% ±200ppm/℃ 2.2Ω 0603  Chip Resistor - Surface Mount ROHS",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -455,74 +1685,22 @@
 								"name":	"element"
 							}
 						},
-						"ref":	"C4",
+						"ref":	"R1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111637_Murata-Electronics-GRM155R61H474ME11D_C1849650.pdf",
-				"manufacturer":	"MURATA",
-				"mpn":	"GRM155R61H474ME11D",
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0603FR-072R2L_C112307.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0603FR-072R2L",
 				"vendor":	"Arrow",
-				"sku":	"GRM155R61H474ME11D",
-				"price":	0.0113,
+				"sku":	"RC0603FR-072R2L",
+				"price":	0.0052,
 				"preferred":	false,
 				"query_properties":	{
-					"capacitance":	4.7e-07,
-					"tolerance.max":	0.2,
-					"type":	"ceramic",
-					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
-					"category":	"capacitor",
+					"resistance":	2.2,
+					"tolerance":	0.01,
+					"category":	"resistor",
 					"_sort":	["area"],
-					"case":	["0402", "0603"],
-					"mounting":	"smd",
-					"min-stock":	1,
-					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"name":	"stepper"
-							},
-							"field":	{
-								"name":	"element"
-							}
-						},
-						"ref":	"C2",
-						"fileinfo":	null
-					}, {
-						"inst":	{
-							"ref":	{
-								"name":	"stepper"
-							},
-							"field":	{
-								"name":	"element"
-							}
-						},
-						"ref":	"C1",
-						"fileinfo":	null
-					}],
-				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111600_Murata-Electronics-GCM155R71H104ME02D_C710666.pdf",
-				"manufacturer":	"MURATA",
-				"mpn":	"GCM155R71H104ME02D",
-				"vendor":	"Arrow",
-				"sku":	"GCM155R71H104ME02D",
-				"price":	0.0058,
-				"preferred":	false,
-				"query_properties":	{
-					"capacitance":	1e-07,
-					"tolerance.max":	0.2,
-					"type":	"ceramic",
-					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
-					"category":	"capacitor",
-					"_sort":	["area"],
-					"case":	["0402", "0603"],
+					"case":	["0603", "0805"],
 					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
@@ -544,8 +1722,8 @@
 						},
 						"ref":	"U1",
 						"fileinfo":	{
-							"filename":	"src/stepper-controller.stanza",
-							"line":	18,
+							"filename":	"src\\stepper-controller.stanza",
+							"line":	17,
 							"column":	2
 						}
 					}],
@@ -557,13 +1735,17 @@
 				"price":	4.684285714,
 				"preferred":	false,
 				"query_properties":	{
-					"manufacturer":	"TRINAMIC Motion Control GmbH",
 					"mpn":	"TMC5160A-TA-T",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
 			}],
 		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
 			}, {
 			}, {
 			}, {

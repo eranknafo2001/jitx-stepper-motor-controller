@@ -31,7 +31,7 @@ public defn setup-part-query (
 
   val all-cats = BaseQuery(
     mounting = "smd", ; default mounting style for resistors and capacitors
-    case = ["0402", "0603"], ; default case size for resistors and capacitors
+    case = ["0603", "0805"], ; default case size for resistors and capacitors
     sort! = SortKey(area = Increasing) ; prefer smaller parts
   )
 
@@ -47,7 +47,7 @@ public defn setup-part-query (
     type = "ceramic", ; ceramic capacitors
     temperature-coefficient_code = ["X7R", "X5R"], ; X7R and X5R dielectric capacitors
     tolerance_max = 0.2, ; +/- 20% tolerance parts
-    rated-voltage = AtLeast(6.0) ; at least 6V rated capacitors
+    rated-voltage = AtLeast(10.0) ; at least 6V rated capacitors
   )
   set-default-capacitor-query!(C-query)
 
